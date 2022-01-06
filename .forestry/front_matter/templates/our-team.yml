@@ -144,6 +144,3 @@ fields:
   config: {}
   template: url
   label: URL
-pages:
-- content/our-team/brittany-simon.md
-- content/our-team/connor-full.md
