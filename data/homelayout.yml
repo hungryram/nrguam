@@ -9,14 +9,14 @@ slideshow:
   enable_white_text: false
 home_sections:
 - template: text-and-image
-  heading: Discover Our Finest Homes
-  body: Each section of the home page can be arranged and customized through your
-    phone or computer. Easily manage your website through our website editor customized
-    specifically for real estate professionals.
-  button: Read more
+  heading: Why National Realty?
+  body: 'No long, unnecessary calls or meetings that take up your time. No pushy sales
+    pitches. We utilize innovation and premium customer service to make you the #1
+    priority, which means "less of us, more of you." That''s our approach.'
+  button: Meet the Team
   button_link: "/our-team"
-  image: https://res.cloudinary.com/hungryram19/image/upload/v1605402573/templates/realestate2/agent-4_ovchvb.jpg
-  image_alt_tag: John
+  image: ''
+  image_alt_tag: ''
   image_width: 400
 - template: active-listings
   heading: Active Listings
