@@ -1,5 +1,5 @@
 ---
-company_name: Real Estate Company
+company_name: National Realty of Guam
 social_media:
   instagram: er
   twitter: er
@@ -8,20 +8,23 @@ social_media:
   yelp: ''
   linkedin: ''
   tiktok: ''
+  youtube: ''
 contact_information:
-  phone: 
-  name: John Doe
-  cell: 232-453-3467
-  address: 419 Street Address
-  email: john@realestatecompany.com
+  phone: "+1 (671) 727-7811"
+  name: Earl Rhee
+  cell: ''
+  address: '845 N. Marine Corps Dr. #202'
+  email: main@nationalrealtyguam.com
   license: 'BRE #5411555'
-  city: Yorba Linda
-  state: California
-  zip_code: "92882"
+  city: Tamuning
+  state: GU
+  zip_code: "96913"
+  google_page_link: ''
 search_engine_optimization:
-  title_tag: Real Estate Theme
-  meta_description: The only real estate theme you need
+  title_tag: ''
+  meta_description: ''
   twitter_card:
     twitter_username: ''
   facebook:
     app_id: ''
+  no_index: false
