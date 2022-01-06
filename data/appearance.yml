@@ -19,10 +19,11 @@ footer:
   important_documents: []
 branding:
   site_title: Real Estate
-  logo: https://res.cloudinary.com/hungryram19/image/upload/v1628898739/templates/realestate2/re-logo_l6o3kg.png
-  favicon: https://res.cloudinary.com/hungryram19/image/upload/v1630445963/templates/realestate2/favicon_zlmzct.png
-  dark_logo: https://res.cloudinary.com/hungryram19/image/upload/v1628898739/templates/realestate2/re-logo_l6o3kg.png
-  logo_width: 120
+  logo: https://res.cloudinary.com/hungryram19/image/upload/v1641503708/earl-rhee/nrguam/national-realty-n-logo-alt-small-4-e1609325162378_huc7wy.webp
+  favicon: https://res.cloudinary.com/hungryram19/image/upload/v1641503928/earl-rhee/nrguam/nrguam-favicon_luzvkm.jpg
+  dark_logo: https://res.cloudinary.com/hungryram19/image/upload/v1641503714/earl-rhee/nrguam/national-realty-n-logo-small_optimized-3_nay6ba.webp
+  logo_width: 250
+  mobile_logo_width: 
 header:
   top_header_color: "#070811"
   header_background_color: "#ffffff"
