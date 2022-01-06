@@ -19,8 +19,8 @@ home_sections:
   image_alt_tag: ''
   image_width: 400
 - template: featured-boxes
-  heading: The Featured Box
-  body: Add in Featured Boxes and link them wherever you need to
+  heading: Let's get started
+  body: ''
   featured:
   - heading: Buy
     image: https://res.cloudinary.com/hungryram19/image/upload/v1641504697/earl-rhee/nrguam/brown-interior-stairs_knyrbj.webp
