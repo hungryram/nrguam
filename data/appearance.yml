@@ -42,7 +42,7 @@ sidebar:
     heading: More Listings
   single_property_sidebar: true
 colors:
-  button_background_color: "#3fb9be"
+  button_background_color: "#204079"
   button_text_color: "#FFFFFF"
   links: "#3fb9be"
   accent: "#3fb9be"

@@ -1,11 +1,11 @@
 ---
 slideshow:
-- heading: Guam real estate made easy
+- heading: GUAM REAL ESTATE MADE EASY
   subtitle: 
   link_label: Read More
   link: https://www.hungryram.com
   image: https://res.cloudinary.com/hungryram19/image/upload/v1641503311/earl-rhee/nrguam/guam_jfy4zf.jpg
-  body: Optionally integrate with IDX or use built in tools
+  body: 
   enable_white_text: false
 home_sections:
 - template: text-and-image
@@ -53,7 +53,7 @@ slideshow_settings:
 video_background:
   video_link: ''
   heading: Highly Customizable Real Estate Theme
-  body: Optionally integrate with IDX or use built in tools
+  body: 
   button_label: Search Homes
   button_link: "/listings"
   enable_black_text: false
