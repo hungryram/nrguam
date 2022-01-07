@@ -1,15 +1,16 @@
 {{ define "main" }}
 {{ $buttonColor := $.Site.Data.appearance.colors }}
-
     <div class="uk-section">
         <div class="uk-container">
             <div class="uk-flex uk-flex-center uk-text-center">
                 <div class="uk-width-2xlarge">
-                    <h2 class="uk-text-bold">Do more than the minimum.</h2>
-                    <p>We don’t just list your property and hope someone comes calling. We use our premium advertising methods to get your property sold sooner rather than later.</p>
+                    {{ if .Params.intro.heading }}<h2 class="uk-text-bold">{{ .Params.intro.heading }}</h2>{{ end }}
+                    {{ if .Params.intro.body }}<p>{{ .Params.intro.body }}</p>{{ end }}
+                    {{ if .Params.intro.button_link }}
                     <div class="uk-margin-medium-top">
-                        <a href="" class="btn-primary uk-button uk-button-primary" {{ if $buttonColor.button_background_color }}style="background:{{ $buttonColor.button_background_color }};color:{{ $buttonColor.button_text_color }};"{{ end }}>Learn</a>
+                        <a href="{{ .Params.intro.button_link }}" class="btn-primary uk-button uk-button-primary" {{ if $buttonColor.button_background_color }}style="background:{{ $buttonColor.button_background_color }};color:{{ $buttonColor.button_text_color }};"{{ end }}>{{ .Params.intro.button_label }}</a>
                     </div>
+                    {{ end }}
                 </div>
             </div>
         </div>
@@ -17,22 +18,12 @@
     <div class="uk-section uk-section-large">
         <div class="uk-container uk-container-large">
             <div class="uk-child-width-expand@l uk-child-width-1-3@s" uk-grid>
+                {{ range .Params.featured.featured_panels }}
                 <div>
-                    <h2 class="uk-h4 uk-text-bold">Professional Photography</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero rerum voluptas eum itaque laboriosam molestiae ipsa asperiores velit culpa unde.</p>
+                    <h2 class="uk-h4 uk-text-bold">{{ .heading }}</h2>
+                    <p>{{ .body }}</p>
                 </div>
-                <div>
-                    <h2 class="uk-h4 uk-text-bold">Professional Photography</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero rerum voluptas eum itaque laboriosam molestiae ipsa asperiores velit culpa unde.</p>
-                </div>
-                <div>
-                    <h2 class="uk-h4 uk-text-bold">Professional Photography</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero rerum voluptas eum itaque laboriosam molestiae ipsa asperiores velit culpa unde.</p>
-                </div>
-                <div>
-                    <h2 class="uk-h4 uk-text-bold">Professional Photography</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero rerum voluptas eum itaque laboriosam molestiae ipsa asperiores velit culpa unde.</p>
-                </div>
+                {{ end }}
             </div>
         </div>
     </div>
@@ -41,11 +32,13 @@
         <div class="uk-container uk-container-large uk-text-center">
             <div class="uk-flex uk-flex-center">
                 <div class="uk-width-2xlarge">
-                    <h2 class="uk-text-bold">Ready to start?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos a nam sunt illo ut perspiciatis, voluptatem earum, iure saepe vitae similique accusamus qui. Exercitationem, explicabo? Officia dolore et hic, quas, minus odit deleniti quaerat ut iste repudiandae molestias, illum voluptatibus.</p>
+                    {{ if .Params.closing.heading }}<h2 class="uk-text-bold">{{ .Params.closing.heading }}</h2>{{ end }}
+                    {{ if .Params.closing.body }}<p>{{ .Params.closing.body }}</p>{{ end }}
+                    {{ if .Params.closing.button_link }}
                     <div class="uk-margin-medium-top">
-                        <a href="" class="uk-button uk-button-primary">Start now</a>
+                        <a href="{{ .Params.closing.button_link }}" class="uk-button uk-button-primary">{{ .Params.closing.button_label }}</a>
                     </div>
+                    {{ end }}
                 </div>
             </div>
         </div>
