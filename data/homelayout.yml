@@ -5,7 +5,7 @@ slideshow:
   link_label: Read More
   link: https://www.hungryram.com
   image: https://res.cloudinary.com/hungryram19/image/upload/v1641503311/earl-rhee/nrguam/guam_jfy4zf.jpg
-  body: 
+  body: ''
   enable_white_text: false
 home_sections:
 - template: text-and-image
@@ -45,6 +45,9 @@ home_sections:
       home. Get emails directly to your inbox and manage the lead as you wish.
   background_color: "#424242"
   enable_white_text: true
+- template: home-agent
+  heading: Our Team
+  body: Let our team of professionals help you.
 slideshow_settings:
   slide_animation: fade
   enable_autoplay: true
@@ -53,7 +56,7 @@ slideshow_settings:
 video_background:
   video_link: ''
   heading: Highly Customizable Real Estate Theme
-  body: 
+  body: ''
   button_label: Search Homes
   button_link: "/listings"
   enable_black_text: false
