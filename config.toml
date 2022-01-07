@@ -1,4 +1,4 @@
-baseURL = "https://vesper.netlify.app/"
+baseURL = "https://nrguam.netlify.app/"
 enableRobotsTXT = "true"
 languageCode = "en-us"
 summaryLength = 25
