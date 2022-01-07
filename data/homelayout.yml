@@ -1,11 +1,11 @@
 ---
 slideshow:
-- heading: GUAM REAL ESTATE MADE EASY
+- heading: GUAM'S PREMIER REAL ESTATE BROKERAGE
   subtitle: 
   link_label: Read More
   link: https://www.hungryram.com
   image: https://res.cloudinary.com/hungryram19/image/upload/v1641503311/earl-rhee/nrguam/guam_jfy4zf.jpg
-  body: ''
+  body: Residential · Investment · Property Management
   enable_white_text: false
 home_sections:
 - template: text-and-image
@@ -24,7 +24,7 @@ home_sections:
   featured:
   - heading: Buy
     image: https://res.cloudinary.com/hungryram19/image/upload/v1641504697/earl-rhee/nrguam/brown-interior-stairs_knyrbj.webp
-    link: '/pages/buy'
+    link: "/pages/buy"
   - heading: Sell
     image: https://res.cloudinary.com/hungryram19/image/upload/v1641504715/earl-rhee/nrguam/white-exterior-home-in-guam_ghlnwk.jpg
     link: "/pages/sell"
@@ -41,7 +41,7 @@ home_sections:
   background_image: https://res.cloudinary.com/hungryram19/image/upload/v1641521479/earl-rhee/nrguam/dark-white-kitchen_d50bh8.jpg
   form:
     heading: Send a message
-    body: 
+    body: ''
   background_color: "#424242"
   enable_white_text: true
 - template: home-agent
