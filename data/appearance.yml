@@ -37,14 +37,12 @@ sidebar:
     blog_categories: ''
   - template: latest-posts
     latest_posts: ''
-  - template: sidebar-listings
-    heading: More Listings
   single_property_sidebar: true
 colors:
   button_background_color: "#204079"
   button_text_color: "#FFFFFF"
-  links: "#3fb9be"
-  accent: "#3fb9be"
+  links: "#204079"
+  accent: "#204079"
 search_field:
   disable_search: false
   search_by_state: false
