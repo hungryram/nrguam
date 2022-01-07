@@ -107,3 +107,5 @@ fields:
     template: seo
     label: SEO
   label: Search Engine Optimization
+pages:
+- content/pages/rent.md
