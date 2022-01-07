@@ -216,17 +216,17 @@
   {{ $buttonColor := $.Site.Data.appearance.colors }}
   {{ $linkColor := $.Site.Data.appearance.colors.links }}
 
-  <div style="background: url({{ .background_image }}) no-repeat center;padding-top:100px;padding-bottom:100px;background-size:cover;background-blend-mode:overlay;background-color: rgba(0,0,0,.30);">
+  <div style="background: url({{ .background_image }}) no-repeat center;padding-top:100px;padding-bottom:100px;background-size:cover;background-blend-mode:overlay;background-color: rgba(0,0,0,.50);">
     <div class="uk-container uk-container-large">
         <div class="uk-flex uk-flex-middle" uk-grid>
             <div class="uk-width-1-2@s">
                 <div class="uk-white">
-                    {{ if .form.heading }}
+                    {{ if .heading }}
                     <h2 class="uk-white">{{ .heading }}</h2>
                     {{ end }}
-                    {{ if .form.body }}
+                    {{ if .body }}
                     <div class="summary-card mb-4">
-                      <p>{{ .form.body | markdownify }}</p>
+                      <p>{{ .body | markdownify }}</p>
                     </div>
                     {{ end }}
                 </div>
