@@ -40,6 +40,13 @@ sections:
 - type: heading
   label: Default Pages
 - type: directory
+  path: content/pages
+  label: Landing Pages
+  create: documents
+  match: "**/*"
+  templates:
+  - landing
+- type: directory
   path: content/listings
   label: Listings
   create: documents
