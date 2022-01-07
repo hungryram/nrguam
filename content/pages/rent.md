@@ -27,8 +27,8 @@ heading = "5. Move In!"
 image = ""
 [intro]
 body = "Moving to a new home is a big step and, in a lot of ways, the beginning of a new chapter. We’ll make it seamless and hassle-free for you."
-button_label = ""
-button_link = ""
+button_label = "Contact"
+button_link = "/contact"
 heading = "Rent a home that you’ll love."
 [search_engine_optimization]
 meta_description = ""

@@ -100,11 +100,11 @@ button.uk-button.uk-button-primary {
 
 .feature-box-overlay {
     transition: .3s;
-    background: rgba(0 0 0 / 20%);
+    background: rgba(0 0 0 / 40%);
 }
 
 .feature-box-overlay:hover {
-    background: rgba(0 0 0 / 40%);
+    background: rgba(0 0 0 / 60%);
     transition: .3s;
 }
 

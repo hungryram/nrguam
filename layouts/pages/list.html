@@ -1,9 +1,19 @@
 {{ define "main" }}
+{{ $buttonColor := $.Site.Data.appearance.colors }}
+
     <div class="uk-section">
-        <div class="uk-container">
-            {{ range .Pages }}
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-            {{ end }}
+        <div class="uk-container uk-text-center">
+            <div class="uk-flex uk-flex-center">
+                <div class="uk-width-large">
+                    <ul class="uk-list">
+                        {{ range .Pages }}
+                            <li>
+                                <a href="{{ .Permalink }}" class="btn-primary uk-button uk-button-primary uk-width-1-1" {{ if $buttonColor.button_background_color }}style="background:{{ $buttonColor.button_background_color }};color:{{ $buttonColor.button_text_color }};"{{ end }}>{{ .Title }}</a>
+                            </li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 {{ end }}

@@ -6,10 +6,26 @@ summaryLength = 25
 name = "Home"
 url = "/"
 weight = 1
+[[menu.footer]]
+name = "Buy"
+url = "/pages/buy"
+weight = 2
+[[menu.footer]]
+name = "Sell"
+url = "/pages/sell"
+weight = 3
+[[menu.footer]]
+name = "Rent"
+url = "/pages/rent"
+weight = 4
+[[menu.footer]]
+name = "Lease"
+url = "/pages/lease"
+weight = 5
 [[menu.main]]
 name = "Property Organizer"
 parent = "Buyers"
-url = "https://search.idxhome.com//organizer/login/133407"
+url = "https://search.idxhome.com//organizer/login/162504"
 weight = 2
 [[menu.main]]
 name = "Blog"
@@ -19,7 +35,7 @@ weight = 1
 [[menu.main]]
 name = "Search the MLS"
 parent = "Buyers"
-url = "https://search.idxhome.com/homesearch/133407"
+url = "https://search.idxhome.com/homesearch/162504"
 weight = 1
 [[menu.main]]
 name = "Home Value Request"

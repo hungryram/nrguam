@@ -24,16 +24,16 @@ home_sections:
   featured:
   - heading: Buy
     image: https://res.cloudinary.com/hungryram19/image/upload/v1641504697/earl-rhee/nrguam/brown-interior-stairs_knyrbj.webp
-    link: ''
+    link: '/pages/buy'
   - heading: Sell
     image: https://res.cloudinary.com/hungryram19/image/upload/v1641504715/earl-rhee/nrguam/white-exterior-home-in-guam_ghlnwk.jpg
-    link: "/status/active"
+    link: "/pages/sell"
   - image: https://res.cloudinary.com/hungryram19/image/upload/v1641504736/earl-rhee/nrguam/bathtub-in-guam_wd7cqo.webp
-    link: "/featured/featured"
+    link: "/pages/rent"
     heading: Rent
   - heading: Lease
     image: https://res.cloudinary.com/hungryram19/image/upload/v1641504757/earl-rhee/nrguam/white-kitchen_jjge5j.webp
-    link: "/our-team"
+    link: "/pages/lease"
 - template: text-and-contact-form
   heading: Real estate agency in Tamuning, Guam
   body: Whether you're selling, investing, or looking for property in Guam, get premium
