@@ -67,35 +67,41 @@
   {{ if eq "home-agent" .template }}
   {{ $buttonColor := $.Site.Data.appearance.colors }}
   {{ $agents := where $.Site.RegularPages "Type" "our-team" }}
-  <div class="uk-section">
-    <div class="uk-container uk-container-large">
+  <div class="uk-section uk-section-large">
+    <div class="uk-container uk-container-large uk-text-center">
+      {{ if .subtitle }}
+      <p class="uk-h4 accent">{{ .subtitle }}</p>
+      {{ end }}
       {{ if .heading }}
-      <h2 class="uk-text-center uk-h2">{{ .heading }}</h2>
+      <h2 class="uk-text-center" style="font-size: 2.5rem;">{{ .heading }}</h2>
       {{ end }}
       {{ if .body }}
       <p class="uk-text-center">{{ .body | markdownify }}</p>
       {{ end }}
-        <div uk-slider>
+        <div class="uk-margin-medium-top" uk-slider>
             <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1">
-                <ul class="uk-slider-items uk-child-width-1-4@l uk-child-width-1-3@m uk-grid uk-margin-medium-top uk-margin-medium-bottom uk-flex-center" uk-height-match="target: .uk-card">
+                <ul class="uk-slider-items uk-child-width-1-4@l uk-child-width-1-3@m uk-grid" uk-height-match="target: .uk-card">
                     {{ if gt $agents 0 }}
                     {{ range where $.Site.RegularPages "Type" "our-team" }}
                     <li>
                         <a href="{{ .Permalink }}">
                             <div class="uk-card uk-card-default" style="box-shadow:none">
                                 <div class="uk-card-media-top uk-cover-container">
-                                    <canvas height="350"></canvas>
+                                    <canvas height="450"></canvas>
                                     {{ if .Params.details.agent_photo }}
                                     <img src="{{ .Params.details.agent_photo }}" alt="{{ .Title }}" uk-cover>
                                     {{ else }}
-                                    <img src="/assets/user.jpg" alt="" uk-cover>
+                                    <img src="/assets/user.jpg" alt="">
                                     {{ end }}
+                                    <div class="uk-overlay-agent uk-position-cover"></div>
+
                                 </div>
-                                <div class="uk-card-body uk-card-default uk-text-center">
-                                    <h3 class="uk-h4">{{ .Title }}</h3>
-                                    <a href="" class="uk-display-block">{{ .Params.contact.cell }}</a>
-                                    <a href="" class="uk-display-block">{{ .Params.contact.email }}</a>                                
-                                </div>
+                                <div class="uk-overlay uk-position-bottom uk-light uk-text-center">
+                                  <h3 class="uk-h4">{{ .Title }}</h3>
+                                  <a href="tel:{{ .Params.contact.cell }}" class="uk-display-block">{{ .Params.contact.cell }}</a>
+                                  <a href="mailto:{{ .Params.contact.email }}" class="uk-display-block">{{ .Params.contact.email }}</a>
+                                  <a href="{{ .Permalink }}" class="accent">Read more</a>
+                              </div>
                             </div>
                         </a>
                     </li>
@@ -104,13 +110,10 @@
                       <h3>No Agents Found</h3>
                     {{ end }}
                 </ul>
-                <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover accent" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover accent" href="#" uk-slidenav-next uk-slider-item="next"></a>
             </div>
             <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-        </div>
-        <div class="uk-margin uk-text-center">
-          <a href="/our-team" class="uk-button uk-button-primary" {{ if $buttonColor.button_background_color }}style="background:{{ $buttonColor.button_background_color }};color:{{ $buttonColor.button_text_color }};"{{ end }}>View more</a>
         </div>
     </div>
 </div>
@@ -157,7 +160,7 @@
 
   {{ if eq "text-and-image" .template }}
   {{ $buttonColor := $.Site.Data.appearance.colors }}
-  <div class="uk-section uk-section-large">
+  <div class="uk-section uk-section-large uk-light" style="background:#242424">
     <div class="uk-container uk-container-large">
       <div class="uk-text-{{ if not .image }}center{{ else }}left{{ end }} uk-flex-middle" uk-grid>
         {{ if .image }}
@@ -184,26 +187,29 @@
   {{ end }}
 
   {{ if eq "featured-boxes" .template }}
-  <div class="uk-section">
+  <div class="uk-section featured-boxes">
     <div class="uk-container uk-container-large">
-      <div class="uk-margin-large">
+      <div class="uk-margin-large-bottom">
+        {{ if .subtitle }}
+        <p class="uk-h4 accent">{{ .subtitle }}</p>
+        {{ end }}
         {{ if .heading }}
-        <h2 class="uk-text-center uk-h2">{{ .heading }}</h2>
+        <h2 class="uk-text-center">{{ .heading }}</h2>
         {{ end }}
         {{ if .body }}
         <p class="uk-text-center">{{ .body | markdownify }}</p>
         {{ end }}
       </div>
-      <div class="uk-grid-column-small uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center" uk-grid uk-height-match="target: .uk-card">
+      <div class="uk-grid-column-small uk-child-width-1-4@s uk-text-center" uk-grid uk-height-match="target: .uk-card">
         {{ range .featured }}
         <div>
           <a href="{{ .link }}">
             <div class="uk-inline uk-cover-container" style="border-radius:4px;">
               <img src="{{ .image }}" alt="" uk-cover>
-              <canvas height="500" width="800"></canvas>
+              <canvas height="500" width="400"></canvas>
               <div class="feature-box-overlay uk-position-cover"></div>
-              <div class="uk-overlay uk-position-center uk-light">
-                  <h3>{{ .heading }}</h3>
+              <div class="uk-position-bottom uk-light">
+                  <h3 class="uk-text-left uk-margin-remove">{{ .heading }}</h3>
               </div>
             </div>
           </a>

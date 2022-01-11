@@ -17,7 +17,7 @@ body .uk-heading-large,
 body .uk-heading-medium, 
 body .uk-heading-small, 
 body .uk-heading-xlarge {
-    font-family: "Raleway", sans-serif!important;
+    font-family: 'Playfair Display', serif!important;
     line-height: 1.5;
 }
 
@@ -124,6 +124,10 @@ div#home-section div.uk-section:nth-child(odd) {
 
 .border {
     border: 1px solid rgba(204, 204, 204, 0.4);
+}
+
+.uk-overlay-agent {
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7));
 }
 
 /* NAVBAR */
@@ -423,4 +427,26 @@ footer.footer a:hover {
   #scroll-top:hover {
     background-color: rgb(34, 34, 34);
     transition: .3s ease;
+}
+
+/* FEATURED BOXES */
+
+div.featured-boxes h3 {
+    background: white;
+    color: #000;
+    position: relative;
+    padding: 20px 10px;
+    left: 0;
+    width: 70%;
+    font-size: 1.2rem;
+}
+
+.feature-box-overlay {
+    transition: .3s;
+    background: rgba(0 0 0 / 20%);
+}
+
+.feature-box-overlay:hover {
+    background: rgba(0 0 0 / 40%);
+    transition: .3s;
 }
