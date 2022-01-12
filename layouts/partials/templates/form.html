@@ -21,6 +21,6 @@
         <button class="uk-button uk-button-primary" {{ if $buttonColor.button_background_color }}style="background:{{ $buttonColor.button_background_color }};color:{{ $buttonColor.button_text_color }};"{{ end }}>Submit</button>
     </div>
     <div class="uk-width-1-1">
-        <p>By submitting the form with your information above you are agreeing to our <a style="color:{{ $linkColor }}" href="/legal/terms-and-conditions">Terms and Conditions</a> and <a style="color:{{ $linkColor }}" href="/legal/privacy-policy">Privacy Policy</a></p>
+        <p>By submitting the form with your information above you are agreeing to our <a style="color:{{ $linkColor }}" href="{{ .Site.BaseURL }}legal/terms-and-conditions">Terms and Conditions</a> and <a style="color:{{ $linkColor }}" href="{{ .Site.BaseURL }}legal/privacy-policy">Privacy Policy</a></p>
     </div>
 </form>
