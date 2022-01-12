@@ -35,7 +35,6 @@ url = "pages/sell"
 weight = 3
 [[menu.main]]
 name = "Buy"
-parent = "Buyers"
 url = "https://search.idxhome.com/homesearch/162504"
 weight = 2
 [[menu.main]]
