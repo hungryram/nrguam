@@ -23,7 +23,12 @@ name = "Home"
 url = "/"
 weight = 1
 [[menu.main]]
+name = "Buy"
+url = "https://search.idxhome.com/homesearch/162504"
+weight = 2
+[[menu.main]]
 name = "Featured"
+url = "https://search.idxhome.com/featured/162504"
 weight = 5
 [[menu.main]]
 name = "Lease"
@@ -33,10 +38,6 @@ weight = 4
 name = "Sell"
 url = "pages/sell"
 weight = 3
-[[menu.main]]
-name = "Buy"
-url = "https://search.idxhome.com/homesearch/162504"
-weight = 2
 [[menu.main]]
 name = "Home"
 url = "/"
