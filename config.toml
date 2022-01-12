@@ -3,58 +3,45 @@ enableRobotsTXT = "true"
 languageCode = "en-us"
 summaryLength = 25
 [[menu.footer]]
-name = "Home"
-url = "/"
-weight = 1
-[[menu.footer]]
-name = "Buy"
-url = "/pages/buy"
-weight = 2
-[[menu.footer]]
-name = "Sell"
-url = "/pages/sell"
-weight = 3
+name = "Lease"
+url = "/pages/lease"
+weight = 5
 [[menu.footer]]
 name = "Rent"
 url = "/pages/rent"
 weight = 4
 [[menu.footer]]
-name = "Lease"
-url = "/pages/lease"
-weight = 5
-[[menu.main]]
-name = "Property Organizer"
-parent = "Buyers"
-url = "https://search.idxhome.com//organizer/login/162504"
+name = "Sell"
+url = "/pages/sell"
+weight = 3
+[[menu.footer]]
+name = "Buy"
+url = "/pages/buy"
 weight = 2
-[[menu.main]]
-name = "Blog"
-parent = "Resources"
-url = "/blog"
-weight = 1
-[[menu.main]]
-name = "Search the MLS"
-parent = "Buyers"
-url = "https://search.idxhome.com/homesearch/162504"
-weight = 1
-[[menu.main]]
-name = "Home Value Request"
-parent = "Sellers"
-url = "/home-valuation"
-weight = 1
-[[menu.main]]
+[[menu.footer]]
 name = "Home"
 url = "/"
 weight = 1
 [[menu.main]]
-name = "Buyers"
-weight = 2
+name = "Featured"
+weight = 5
 [[menu.main]]
-name = "Sellers"
+name = "Lease"
+url = "/pages/lease"
+weight = 4
+[[menu.main]]
+name = "Sell"
+url = "pages/sell"
 weight = 3
 [[menu.main]]
-name = "Resources"
-weight = 4
+name = "Buy"
+parent = "Buyers"
+url = "https://search.idxhome.com/homesearch/162504"
+weight = 2
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 [params]
