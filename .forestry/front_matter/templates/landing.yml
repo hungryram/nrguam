@@ -68,6 +68,25 @@ fields:
       labelField: 
     label: Featured Panels
   label: Featured
+- name: extra
+  type: field_group
+  config: {}
+  fields:
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+  - name: body
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Body
+  label: Extra
 - name: closing
   type: field_group
   config: {}
