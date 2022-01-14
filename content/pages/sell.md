@@ -22,8 +22,8 @@ heading = "Professional Photography"
 image = ""
 [intro]
 body = "Your property is the fruit of your labor. It deservces to be sold professionally"
-button_label = "Get started"
-button_link = "https://form.jotform.com/210727551755862"
+button_label = ""
+button_link = ""
 heading = "Sell with National Realty"
 [search_engine_optimization]
 meta_description = ""
