@@ -5,6 +5,9 @@ body = ""
 button_label = "Start here"
 button_link = "https://form.jotform.com/210731112499855"
 heading = "Need to go over your finances, or get prequalified for a loan?"
+[extra]
+body = ""
+heading = ""
 [[featured.featured_panels]]
 body = "Get your finances ready. There are 3 payments you'll need to make: deposit, purchase price, and closing costs."
 heading = "1. Prepare"
@@ -27,8 +30,8 @@ heading = "5. All Yours!"
 image = ""
 [intro]
 body = ""
-button_label = "Start here"
-button_link = "https://form.jotform.com/210731112499855"
+button_label = "Search Homes"
+button_link = "https://search.idxhome.com/homesearch/162504"
 heading = "Find your next property."
 [search_engine_optimization]
 meta_description = ""
