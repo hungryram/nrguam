@@ -13,8 +13,8 @@ home_sections:
   body: 'No long, unnecessary calls or meetings that take up your time. No pushy sales
     pitches. We utilize innovation and premium customer service to make you the #1
     priority, which means "less of us, more of you." That''s our approach.'
-  button: Meet the Team
-  button_link: "/our-team"
+  button: ''
+  button_link: ''
   image: ''
   image_alt_tag: ''
   image_width: 400
