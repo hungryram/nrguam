@@ -8,6 +8,7 @@ heading = "Let's get started!"
 [extra]
 body = "Need to prepare your property first? We can help with that too. Services include:\n\n* Deep-cleaning\n* Repairs (plumbing, electrical, HVAC, carpentry, etc.)\n* Painting\n* Landscaping"
 heading = "HomeFix by National Realty"
+image = "https://res.cloudinary.com/hungryram19/image/upload/v1642236335/earl-rhee/nrguam/livingroom_qnfgri.jpg"
 [[featured.featured_panels]]
 body = "Don't just rely on agents finding your property or getting picked up from a Google search. We generate real interest by running ad campaigns on Facebook and Instagram."
 heading = "Advertising"
