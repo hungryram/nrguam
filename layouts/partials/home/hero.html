@@ -35,6 +35,9 @@
                     {{ if .subtitle }}<h4>{{ .subtitle }}</h4>{{ end }}
                     {{ if .heading }}<h1 class="uk-margin-remove">{{ .heading }}</h1>{{ end }}
                     {{ if .body }}<p class="uk-margin-remove uk-text-default">{{ .body }}</p>{{ end }}
+    <div class="uk-margin-medium-top">
+        <a href="https://search.idxhome.com/homesearch/162504" class="uk-button uk-button-primary" {{ if $buttonColor.button_background_color }}style="background:{{ $buttonColor.button_background_color }};color:{{ $buttonColor.button_text_color }};"{{ end }}>Search Properties</a>
+    </div>                    
                     {{ if eq $.Site.Data.idx.enable_idx false }}
                     <div class="uk-margin-medium-top">
                         <form action="{{ "search" | absURL }}">
@@ -58,20 +61,6 @@
         {{ end }}
     </ul>
 
-    {{ if $.Site.Data.idx.enable_idx }}
-    <div class="uk-light hero-foot">
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-        <div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
-            <div class="uk-container quicksearch">
-                {{ if $.Site.Data.idx.incomplete_subdomain }}
-                <script type="text/javascript" src="https://{{ $.Site.Data.idx.incomplete_subdomain }}.idxhome.com/site/listing/search/widget/{{ $ihfID }}?style=horizontal"></script>
-                {{ else }}
-                <script type="text/javascript" src="https://{{ $.Site.Data.idx.complete_subdomain }}.idxhome.com/site/listing/search/widget/{{ $ihfID }}?style=horizontal"></script>
-                {{ end }}
-            </div>
-        </div>
-    </div>
-    {{ end }}
+
 </div>
 {{ end }}

@@ -30,16 +30,25 @@
             </div>
         </div>
     </div>
+    {{ if .Params.extra.heading }}
     <div class="uk-section uk-section-small">
-        <div class="uk-container uk-container-xsmall">
-            <div class="uk-margin-large-bottom uk-text-center">
-                <h2 class="uk-text-bold">{{ .Params.extra.heading }}</h2>
-            </div>
-            <div>
-                {{ .Params.extra.body | markdownify }}
+        <div class="uk-container">
+            <div class="uk-child-width-expand@s" uk-grid>
+                <div>
+                    <div class="uk-margin-large-bottom uk-text-center">
+                        <h2 class="uk-text-bold">{{ .Params.extra.heading }}</h2>
+                    </div>
+                    <div>
+                        {{ .Params.extra.body | markdownify }}
+                    </div>
+                </div>
+                <div>
+                    <img src="{{ .Params.extra.image }}" alt="">
+                </div>
             </div>
         </div>
     </div>
+    {{ end }}
     <div class="uk-section uk-section-large uk-light" style="background: #204079">
         <div class="hero-overlay"></div>
         <div class="uk-container uk-container-large">
