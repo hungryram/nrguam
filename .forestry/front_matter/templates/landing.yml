@@ -86,6 +86,11 @@ fields:
       schema:
         format: markdown
     label: Body
+  - name: image
+    type: file
+    config:
+      maxSize: 2
+    label: Image
   label: Extra
 - name: closing
   type: field_group
