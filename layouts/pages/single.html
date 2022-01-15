@@ -1,5 +1,6 @@
 {{ define "main" }}
 {{ $buttonColor := $.Site.Data.appearance.colors }}
+{{ $ihfID := .Site.Data.idx.ihf_client_id }}
     <div class="uk-section">
         <div class="uk-container">
             <div class="uk-flex uk-flex-center uk-text-center">
@@ -13,8 +14,42 @@
                     {{ end }}
                 </div>
             </div>
+            {{ if in .Permalink "lease" }}
+            <div class="uk-margin-medium-top">
+                {{ if $.Site.Data.idx.incomplete_subdomain }}
+                <script type="text/javascript" src="https://{{ $.Site.Data.idx.incomplete_subdomain }}.idxhome.com/site/listing/search/widget/{{ $ihfID }}?style=horizontal"></script>
+                {{ else }}
+                <script type="text/javascript" src="https://{{ $.Site.Data.idx.complete_subdomain }}.idxhome.com/site/listing/search/widget/{{ $ihfID }}?style=horizontal"></script>
+                {{ end }}
+            </div>
+            {{ end }}
         </div>
     </div>
+    {{ if in .Permalink "lease" }}
+    <div class="uk-section">
+        <div class="uk-container">
+            <div class="uk-child-width-expand@s" uk-grid>
+                <div>
+                    <div class="uk-inline uk-cover-container" style="border-radius:4px;">
+                        <img src="https://res.cloudinary.com/hungryram19/image/upload/v1642237880/earl-rhee/nrguam/happy-asian-relaxing-on-couch.jpg" alt="" uk-cover>
+                        <canvas height="500" width="800"></canvas>
+                    </div>
+                </div>
+                    <a href="/pages/landlord">
+                        <div class="uk-inline uk-cover-container" style="border-radius:4px;">
+                            <img src="https://res.cloudinary.com/hungryram19/image/upload/v1642237937/earl-rhee/nrguam/homes-with-green-tree.jpg" alt="" uk-cover>
+                            <canvas height="500" width="800"></canvas>
+                          <div class="feature-box-overlay uk-position-cover"></div>
+                          <div class="uk-overlay uk-position-center uk-light">
+                              <h3>For Landlords</h3>
+                          </div>
+                        </div>
+                      </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ end }}
     <div class="uk-section">
         <div class="uk-container uk-container-large">
             <div class="uk-margin-large-bottom uk-text-center">

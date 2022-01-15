@@ -1,47 +1,44 @@
+
 {{ $companyName := .Site.Data.profile.company_name }}
 {{ $footer := .Site.Data.appearance.footer }}
 {{ $footerContact := .Site.Data.profile.contact_information }}
 {{ $footerSocial := .Site.Data.profile.social_media }}
 {{ $accent := $.Site.Data.appearance.colors.accent }}
 
-<footer style="{{ if $footer.background_image }}background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,9)),url({{ $footer.background_image }}) no-repeat center;{{ else }}background:{{ $footer.footer_background_color }}{{ end }}">
+
+<footer class="footer" style="{{ if $footer.background_image }}background:url({{ $footer.background_image }}) no-repeat center;background-size:cover;background-blend-mode:overlay;background-color:rgba(0,0,0,0.9){{ else }}background:{{ $footer.footer_background_color }}{{ end }}">
     <div class="uk-section">
         <div class="uk-container uk-container-large">
-            <div uk-grid>
-                <div class="uk-width-1-4@s">
-                    <h4 class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">Email</h4>
-                    {{ if $footerContact.email }}<a href="tel:{{ $footerContact.email }}"class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">{{ $footerContact.email }}</a>{{ end }}
-                    <h4 class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">Address</h4>
-                    {{ if $footerContact.address }}<address><a href="https://www.google.com/maps/place/{{ $footerContact.address }} {{ $footerContact.city }} {{ $footerContact.state }} {{ $footerContact.zip_code }}"class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">{{ $footerContact.address }}, {{ $footerContact.city }}, {{ $footerContact.state }} {{ $footerContact.zip_code }}</a></address>{{ end }}
-
-
+            <div class="uk-grid-large uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
+                <div>
+                    <h2 class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }} uk-h5 uk-text-bold">Contact</h2>
                     <ul class="uk-list">
-                        <li><p class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">{{ $footerContact.name }}</p></li>
-                        <li><p class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">{{ $footerContact.license }}</p></li>
-                    </ul>
+                        {{ if $footerContact.phone }}<li><a href="tel:{{ $footerContact.phone }}"class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}"><span class="uk-margin-small-right" uk-icon="receiver"></span>{{ $footerContact.phone }}</a></li>{{ end }}
+                        {{ if $footerContact.cell }}<li><a href="tel:{{ $footerContact.cell }}"class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}"><span class="uk-margin-small-right" uk-icon="phone"></span>{{ $footerContact.cell }}</a></li>{{ end }}
+                        {{ if $footerContact.email }}<li><a href="mailto:{{ $footerContact.email }}"class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}"><span class="uk-margin-small-right" uk-icon="mail"></span>{{ $footerContact.email }}</a></li>{{ end }}
+                        {{ if $footerContact.address }}<li><span class="uk-margin-small-right uk-white" uk-icon="location"></span><a href="{{ if $footerContact.google_page_link }}{{ $footerContact.google_page_link }}{{ else }}https://www.google.com/maps/place/{{ $footerContact.address }},+{{ $footerContact.city }},+{{ $footerContact.state }}{{ end }}"class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">{{ $footerContact.address }}, {{ $footerContact.city }}, {{ $footerContact.state }} {{ $footerContact.zip_code }}</a></li>{{ end }}
+                    </ul>                
                 </div>
-                <div class="uk-width-1-4@s">
-                    <h4 class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">Phone</h4>
-                    {{ if $footerContact.cell }}<a href="tel:{{ $footerContact.cell }}"class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">{{ $footerContact.cell }}</a>{{ end }}                
-                    {{ if $footerContact.phone }}<a href="tel:{{ $footerContact.phone }}"class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">{{ $footerContact.phone }}</a>{{ end }}                
+                <div>
+                    <h2 class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }} uk-h5 uk-text-bold">Quick Links</h2>
+                    <ul class="uk-list">
+                        {{ $currentPage := . }}
+                        {{ range .Site.Menus.footer }}
+                        <li><a class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+                        {{ end }}
+                    </ul>           
                 </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<footer class="footer" style="background:black">
-    <div class="uk-section">
-        <div class="uk-container uk-container-large">
-            <div class="uk-grid-medium uk-child-width-1-2@s" uk-grid>
                 <div>
                     {{ if $footer.logo }}
                     <img src="{{ $footer.logo }}" alt="{{ $companyName }}" width="150">
                     {{ else }}
-                    <h5 class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">{{ $companyName }}</h5>
+                    <h2 class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }} uk-h5 uk-text-bold">{{ $companyName }}</h2>
                     {{ end }}
                     <p class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">{{ .Site.Data.appearance.footer.footer_bio }}</p>
-
-
+                    <ul class="uk-list">
+                        <li><p class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">{{ $footerContact.name }}</p></li>
+                        <li><p class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">{{ $footerContact.license }}</p></li>
+                    </ul>
                     <div class="accent">
                         {{ if $footerSocial.facebook }}<a href="{{ $footerSocial.facebook }}" class="uk-icon-button uk-margin-small-right" uk-icon="icon: facebook; ratio: .8" style="color: {{ $accent }}"></a>{{ end }}
                         {{ if $footerSocial.instagram }}<a href="{{ $footerSocial.instagram }}" class="uk-icon-button uk-margin-small-right" uk-icon="icon: instagram; ratio: .8" style="color: {{ $accent }}"></a>{{ end }}
@@ -52,16 +49,6 @@
                         {{ if $footerSocial.tiktok }}<a href="{{ $footerSocial.tiktok }}" class="uk-icon-button uk-margin-small-right" uk-icon="icon: tiktok; ratio: .8" style="color: {{ $accent }}"></a>{{ end }}
                         {{ if $footerSocial.yelp }}<a href="{{ $footerSocial.yelp }}" class="uk-icon-button uk-margin-small-right" uk-icon="icon: yelp; ratio: .8" style="color: {{ $accent }}"></a>{{ end }}
                     </div>
-                </div>
-
-                <div>
-                    <h5 class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">Quick Links</h5>
-                    <ul class="uk-list">
-                        {{ $currentPage := . }}
-                        {{ range .Site.Menus.footer }}
-                        <li><a class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
-                        {{ end }}
-                    </ul>           
                 </div>
             </div>
         </div>
@@ -75,7 +62,7 @@
                     {{ end }}
 
                     <li><small class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">{{ $footer.disclaimer }}</small></li>
-                    <li><small class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">&copy; Copyright {{ dateFormat "2006" now }}, {{ .Site.Data.profile.company_name }}  &middot; <a href="https://hungryram.com" target="_blank" class="uk-text-bold">Website Developed by Hungry Ram</a></small></li>
+                    <li><small class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">&copy; Copyright {{ dateFormat "2006" now }}, {{ .Site.Data.profile.company_name }}  &middot; <a href="https://hungryram.com" target="_blank" class="uk-text-bold" rel="nofollow">Real Estate Website Powered by Hungry Ram Web Design</a></small></li>
                     {{ if $footer.equal_housing_logo }}
                     <li class="uk-display-inline-block uk-margin-small-right"><img src="https://res.cloudinary.com/hungryram19/image/upload/v1628532562/Resources/equal-housing-opportunity-transparent_jdomdn.png" alt="equal housing opportunity logo" width="30"></li>
                     {{ end }}
@@ -88,7 +75,7 @@
                 </ul>
             </div>
         </div>
-        <div class="uk-grid">
+        <div class="uk-grid uk-padding-small">
             <div class="uk-width-1-1">
                 <ul class="hr-legals uk-padding-remove uk-text-center">
                     {{ range where $.Site.Pages.ByWeight "Type" "legal" }}
