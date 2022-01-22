@@ -22,10 +22,10 @@ body = "First impressions matter. Not just for buyers but for agents with buyer 
 heading = "Professional Photography"
 image = ""
 [intro]
-body = "Your property is the fruit of your labor. It deservces to be sold professionally"
+body = ""
 button_label = ""
 button_link = ""
-heading = "Sell with National Realty"
+heading = "Your property is the fruit of your labor. It deserves to be sold professionally"
 [search_engine_optimization]
 meta_description = ""
 no_index = false
