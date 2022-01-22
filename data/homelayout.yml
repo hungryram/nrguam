@@ -10,7 +10,10 @@ slideshow:
 home_sections:
 - template: text-and-image
   heading: Why National Realty?
-  body: 'We provide sound advice so you can make the best possible decisions. We offer premium customer service to make you the #1 priority, which means “less about us, more about you.” We innovate to make your real estate journey easier. This is our approach. These are the cornerstones of our business.'
+  body: 'We provide sound advice so you can make the best possible decisions. We offer
+    premium customer service to make you the #1 priority, which means “less about
+    us, more about you.” We innovate to make your real estate journey easier. This
+    is our approach. These are the cornerstones of our business.'
   button: ''
   button_link: ''
   image: ''
@@ -27,21 +30,11 @@ home_sections:
     image: https://res.cloudinary.com/hungryram19/image/upload/v1641504715/earl-rhee/nrguam/white-exterior-home-in-guam_ghlnwk.jpg
     link: "/pages/sell"
   - image: https://res.cloudinary.com/hungryram19/image/upload/v1641504736/earl-rhee/nrguam/bathtub-in-guam_wd7cqo.webp
-    link: "/pages/rent"
-    heading: Rent
-  - heading: Lease
-    image: https://res.cloudinary.com/hungryram19/image/upload/v1641504757/earl-rhee/nrguam/white-kitchen_jjge5j.webp
     link: "/pages/lease"
-- template: text-and-contact-form
-  heading: Real estate agency in Tamuning, Guam
-  body: Whether you're selling, investing, or looking for property in Guam, get premium
-    real estate service with National Realty.
-  background_image: https://res.cloudinary.com/hungryram19/image/upload/v1641521479/earl-rhee/nrguam/dark-white-kitchen_d50bh8.jpg
-  form:
-    heading: Send a message
-    body: ''
-  background_color: "#424242"
-  enable_white_text: true
+    heading: Lease
+  - heading: Featured
+    image: https://res.cloudinary.com/hungryram19/image/upload/v1641504757/earl-rhee/nrguam/white-kitchen_jjge5j.webp
+    link: https://search.idxhome.com/featured/162504
 - template: home-agent
   heading: Our Team
   body: Let our team of professionals help you.
