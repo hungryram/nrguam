@@ -1,4 +1,5 @@
 +++
+hide_form = true
 title = "Lease"
 [closing]
 body = ""

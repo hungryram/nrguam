@@ -140,6 +140,9 @@ fields:
     template: seo
     label: SEO
   label: Search Engine Optimization
+- name: hide_form
+  type: boolean
+  label: Hide form
 pages:
 - content/pages/buy.md
 - content/pages/landlords.md
