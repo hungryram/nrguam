@@ -4,7 +4,7 @@ title = "Landlords"
 body = ""
 button_label = ""
 button_link = ""
-heading = ""
+heading = "Get started"
 [extra]
 body = ""
 heading = ""
