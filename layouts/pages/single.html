@@ -1,6 +1,8 @@
 {{ define "main" }}
 {{ $buttonColor := $.Site.Data.appearance.colors }}
 {{ $ihfID := .Site.Data.idx.ihf_client_id }}
+
+{{ if .Params.intro.heading }}
     <div class="uk-section">
         <div class="uk-container">
             <div class="uk-flex uk-flex-center uk-text-center">
@@ -25,6 +27,7 @@
             {{ end }}
         </div>
     </div>
+{{ end }}
     {{ if in .Permalink "lease" }}
     <div class="uk-section">
         <div class="uk-container">
@@ -35,7 +38,7 @@
                         <canvas height="500" width="800"></canvas>
                     </div>
                 </div>
-                    <a href="/pages/landlord">
+                    <a href="/pages/landlords">
                         <div class="uk-inline uk-cover-container" style="border-radius:4px;">
                             <img src="https://res.cloudinary.com/hungryram19/image/upload/v1642237937/earl-rhee/nrguam/homes-with-green-tree.jpg" alt="" uk-cover>
                             <canvas height="500" width="800"></canvas>
@@ -87,6 +90,7 @@
         </div>
     </div>
     {{ end }}
+    {{ if not .Params.hide_form }}
     <div class="uk-section uk-section-large uk-light" style="background: #204079">
         <div class="hero-overlay"></div>
         <div class="uk-container uk-container-large">
@@ -103,4 +107,5 @@
             </div>
         </div>
     </div>
+    {{ end }}
 {{ end }}

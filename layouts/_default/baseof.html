@@ -87,6 +87,9 @@
             {{ if .Params.body }}
             <p class="uk-white uk-position-relative">{{ .Params.body }}</p>
             {{ end }}
+            {{ if in .Permalink "sell" }}
+            <p class="uk-white uk-card">{{ .Params.intro.body }}</p>
+            {{ end }}
         </div>
 </div>
 {{ end }}
