@@ -34,6 +34,8 @@ body = "From advertising to military inspections, we’ve got you covered."
 button_label = ""
 button_link = ""
 heading = "Get real support as a landlord."
+[menu.main]
+weight = 5
 [search_engine_optimization]
 meta_description = ""
 no_index = false

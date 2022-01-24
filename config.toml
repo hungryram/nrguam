@@ -3,33 +3,33 @@ enableRobotsTXT = "true"
 languageCode = "en-us"
 summaryLength = 25
 [[menu.footer]]
-name = "Lease with National Realty"
-url = "/pages/lease"
-weight = 5
-[[menu.footer]]
-name = "Rent with National Realty"
-url = "/pages/rent"
-weight = 4
+name = "Buy with National Realty"
+url = "/pages/buy"
+weight = 2
 [[menu.footer]]
 name = "Sell with National Realty"
 url = "/pages/sell"
 weight = 3
 [[menu.footer]]
-name = "Buy with National Realty"
-url = "/pages/buy"
-weight = 2
+name = "Rent with National Realty"
+url = "/pages/rent"
+weight = 4
+[[menu.footer]]
+name = "Lease with National Realty"
+url = "/pages/lease"
+weight = 5
 [[menu.footer]]
 name = "Home"
 url = "/"
 weight = 1
 [[menu.main]]
+name = "Featured"
+url = "https://search.idxhome.com/featured/162504"
+weight = 6
+[[menu.main]]
 name = "Buy"
 url = "https://search.idxhome.com/homesearch/162504"
 weight = 2
-[[menu.main]]
-name = "Featured"
-url = "https://search.idxhome.com/featured/162504"
-weight = 5
 [[menu.main]]
 name = "Lease"
 url = "/pages/lease"
