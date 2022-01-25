@@ -16,7 +16,7 @@ url = "/pages/rent"
 weight = 4
 [[menu.footer]]
 name = "Lease with National Realty"
-url = "/pages/lease"
+url = "/pages/rent"
 weight = 5
 [[menu.footer]]
 name = "Home"
@@ -31,8 +31,8 @@ name = "Buy"
 url = "https://search.idxhome.com/homesearch/162504"
 weight = 2
 [[menu.main]]
-name = "Lease"
-url = "/pages/lease"
+name = "Rent"
+url = "/pages/rent"
 weight = 4
 [[menu.main]]
 name = "Sell"

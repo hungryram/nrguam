@@ -16,7 +16,7 @@
                     {{ end }}
                 </div>
             </div>
-            {{ if in .Permalink "lease" }}
+            {{ if in .Permalink "rent" }}
             <div class="uk-margin-medium-top">
                 {{ if $.Site.Data.idx.incomplete_subdomain }}
                 <script type="text/javascript" src="https://{{ $.Site.Data.idx.incomplete_subdomain }}.idxhome.com/site/listing/search/widget/{{ $ihfID }}?style=horizontal"></script>
@@ -28,29 +28,14 @@
         </div>
     </div>
 {{ end }}
-    {{ if in .Permalink "lease" }}
-    <div class="uk-section">
-        <div class="uk-container">
-            <div class="uk-child-width-expand@s" uk-grid>
-                <div>
-                    <div class="uk-inline uk-cover-container" style="border-radius:4px;">
-                        <img src="https://res.cloudinary.com/hungryram19/image/upload/v1642237880/earl-rhee/nrguam/happy-asian-relaxing-on-couch.jpg" alt="" uk-cover>
-                        <canvas height="500" width="800"></canvas>
-                    </div>
-                </div>
-                    <a href="/pages/landlords">
-                        <div class="uk-inline uk-cover-container" style="border-radius:4px;">
-                            <img src="https://res.cloudinary.com/hungryram19/image/upload/v1642237937/earl-rhee/nrguam/homes-with-green-tree.jpg" alt="" uk-cover>
-                            <canvas height="500" width="800"></canvas>
-                          <div class="feature-box-overlay uk-position-cover"></div>
-                          <div class="uk-overlay uk-position-center uk-light">
-                              <h3>For Landlords</h3>
-                          </div>
-                        </div>
-                      </a>
-                </div>
+    {{ if in .Permalink "rent" }}
+    <div>
+        <a href="/pages/landlords">
+            <div class="uk-background-cover uk-height-viewport uk-panel uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-light landlord" style="background-image: url(https://res.cloudinary.com/hungryram19/image/upload/v1642237880/earl-rhee/nrguam/happy-asian-relaxing-on-couch.jpg);background-blend-mode:overlay;background-color:rgb(0 0 0 / 33%);">
+                <h2 class="uk-h1">For Landlords</h2>
+                <p class="uk-h4">Click here to get the best landlord support on the island.</p>
             </div>
-        </div>
+        </a>
     </div>
     {{ end }}
     <div class="uk-section uk-section-large" style="background: rgb(243, 243, 243)">
@@ -72,7 +57,7 @@
         </div>
     </div>
     {{ if .Params.extra.heading }}
-    <div class="uk-section uk-section-large">
+    <div class="uk-section uk-section-large"{{ if .Params.extra_two.heading }}style="padding-bottom:0;"{{ end }}>
         <div class="uk-container">
             <div class="uk-child-width-expand@s uk-flex-middle" uk-grid>
                 <div>
@@ -90,6 +75,26 @@
         </div>
     </div>
     {{ end }}
+    {{ if .Params.extra_two.heading }}
+    <div class="uk-section uk-section-large">
+        <div class="uk-container">
+            <div class="uk-child-width-expand@s uk-flex-middle" uk-grid>
+                <div>
+                    <img src="{{ .Params.extra.image }}" alt="">
+                </div>
+                <div>
+                    <div class="uk-margin-large-bottom uk-text-center">
+                        <h2 class="uk-text-bold">{{ .Params.extra.heading }}</h2>
+                    </div>
+                    <div>
+                        {{ .Params.extra.body | markdownify }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+
     {{ if not .Params.hide_form }}
     <div class="uk-section uk-section-large uk-light" style="background: #204079">
         <div class="hero-overlay"></div>

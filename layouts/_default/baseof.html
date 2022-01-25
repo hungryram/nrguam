@@ -90,6 +90,9 @@
             {{ if in .Permalink "sell" }}
             <p class="uk-white uk-card">{{ .Params.intro.body }}</p>
             {{ end }}
+            {{ if in .Permalink "landlords" }}
+            <p class="uk-white uk-card">{{ .Params.intro.body }}</p>
+            {{ end }}
         </div>
 </div>
 {{ end }}
