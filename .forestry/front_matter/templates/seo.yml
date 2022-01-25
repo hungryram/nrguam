@@ -21,3 +21,8 @@ fields:
   label: No Index
   description: 'WARNING: Enabling this will prevent your page from being indexed by
     search engines.'
+- name: url
+  type: text
+  config:
+    required: false
+  label: url
