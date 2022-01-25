@@ -143,6 +143,11 @@ fields:
 - name: hide_form
   type: boolean
   label: Hide form
+- name: url
+  type: text
+  config:
+    required: false
+  label: url
 pages:
 - content/pages/buy.md
 - content/pages/landlords.md
