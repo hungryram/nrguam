@@ -1,6 +1,7 @@
 +++
 hide_form = true
 title = "Rent"
+url = "pages/rent"
 [closing]
 body = ""
 button_label = "Get started"
