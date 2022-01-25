@@ -14,7 +14,7 @@ image = "https://res.cloudinary.com/hungryram19/image/upload/v1642236335/earl-rh
 [extra_two]
 body = "Whether it's a single home, a condo, or a large apartment complex, we specialize in them all. Our goal is to relieve you of the headaches that inevitably come with managing an income property. Our property management system translates into increased net income and added value to your asset.\n\nOur property management services include the following:\n\n* Rent collection\n* Tenant management\n* Administration\n* Bookkeeping\n* Operations\n* Maintenance"
 heading = "Property Management Services"
-image = ""
+image = "https://res.cloudinary.com/hungryram19/image/upload/v1643098632/earl-rhee/nrguam/old-asian-man-smiling_rnrhbo.jpg"
 [[featured.featured_panels]]
 body = "First impressions matter. Not just for renters but for agents with renter clients too. Draw people to your property with our professional in-house photography."
 heading = "Professional Photography"
