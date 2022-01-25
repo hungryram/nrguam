@@ -1,6 +1,6 @@
 +++
 hide_form = true
-title = "Lease"
+title = "Rent"
 [closing]
 body = ""
 button_label = "Get started"
@@ -39,5 +39,6 @@ heading = " Get real support as a landlord."
 meta_description = ""
 no_index = false
 title_tag = ""
+url = "pages/rent"
 
 +++
