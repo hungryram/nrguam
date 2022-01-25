@@ -101,6 +101,30 @@ fields:
       maxSize: 2
     label: Image
   label: Extra
+- name: extra_two
+  type: field_group
+  config: {}
+  fields:
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+  - name: body
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Body
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+  label: Extra Two
 - name: closing
   type: field_group
   config: {}
