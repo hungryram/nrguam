@@ -1,14 +1,18 @@
 +++
+disable_service = true
 hide_form = true
 title = "Lease"
 url = "pages/lease"
-disable_service = true
 [closing]
 body = ""
 button_label = "Get started"
 button_link = "https://form.jotform.com/210728848109865"
 heading = "Ready to lease?"
 [extra]
+body = ""
+heading = ""
+image = ""
+[extra_two]
 body = ""
 heading = ""
 image = ""
@@ -36,7 +40,7 @@ svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-t
 body = ""
 button_label = ""
 button_link = ""
-heading = " Get real support as a landlord."
+heading = "Find your next rental home."
 [search_engine_optimization]
 meta_description = ""
 no_index = false
