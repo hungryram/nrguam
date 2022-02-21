@@ -30,8 +30,8 @@ home_sections:
     image: https://res.cloudinary.com/hungryram19/image/upload/v1641504715/earl-rhee/nrguam/white-exterior-home-in-guam_ghlnwk.jpg
     link: "/pages/sell"
   - image: https://res.cloudinary.com/hungryram19/image/upload/v1641504736/earl-rhee/nrguam/bathtub-in-guam_wd7cqo.webp
-    link: "/pages/rent"
-    heading: Rent
+    link: "/pages/lease"
+    heading: Lease
   - heading: Featured
     image: https://res.cloudinary.com/hungryram19/image/upload/v1641504757/earl-rhee/nrguam/white-kitchen_jjge5j.webp
     link: https://search.idxhome.com/featured/162504

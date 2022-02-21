@@ -1,6 +1,7 @@
 +++
 hide_form = false
-title = "Landlords"
+title = "Lease/Manage with National Realty"
+body = "When you hire us, you're choosing a peace of mind."
 url = ""
 [closing]
 body = ""

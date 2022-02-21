@@ -16,19 +16,21 @@
                     {{ end }}
                 </div>
             </div>
-            {{ if in .Permalink "rent" }}
-            <div class="uk-margin-medium-top">
-                {{ if $.Site.Data.idx.incomplete_subdomain }}
-                <script type="text/javascript" src="https://{{ $.Site.Data.idx.incomplete_subdomain }}.idxhome.com/site/listing/search/widget/{{ $ihfID }}?style=horizontal"></script>
-                {{ else }}
-                <script type="text/javascript" src="https://{{ $.Site.Data.idx.complete_subdomain }}.idxhome.com/site/listing/search/widget/{{ $ihfID }}?style=horizontal"></script>
-                {{ end }}
+            {{ if in .Permalink "lease" }}
+            <div class="uk-section-large">
+                <div>
+                    {{ if $.Site.Data.idx.incomplete_subdomain }}
+                    <script type="text/javascript" src="https://{{ $.Site.Data.idx.incomplete_subdomain }}.idxhome.com/site/listing/search/widget/{{ $ihfID }}?style=horizontal"></script>
+                    {{ else }}
+                    <script type="text/javascript" src="https://{{ $.Site.Data.idx.complete_subdomain }}.idxhome.com/site/listing/search/widget/{{ $ihfID }}?style=horizontal"></script>
+                    {{ end }}
+                </div>
             </div>
             {{ end }}
         </div>
     </div>
 {{ end }}
-    {{ if in .Permalink "rent" }}
+    {{ if in .Permalink "lease" }}
     <div>
         <a href="/pages/landlords">
             <div class="uk-background-cover uk-height-viewport uk-panel uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-light landlord" style="background-image: url(https://res.cloudinary.com/hungryram19/image/upload/v1642237880/earl-rhee/nrguam/happy-asian-relaxing-on-couch.jpg);background-blend-mode:overlay;background-color:rgb(0 0 0 / 33%);">
@@ -38,30 +40,32 @@
         </a>
     </div>
     {{ end }}
-    <div class="uk-section uk-section-large" style="background: rgb(243, 243, 243)">
-        <div class="uk-container uk-container-large">
-            <div class="uk-margin-large-bottom uk-text-center">
-                <h2 class="uk-text-bold">Services</h2>
-            </div>
-            <div class="uk-child-width-expand@l uk-child-width-1-3@s uk-text-center" uk-grid>
-                {{ range .Params.featured.featured_panels }}
-                <div>
-                    {{ if .svg }}
-                    {{ .svg | safeHTML }}
-                    {{ end }}
-                    <h2 class="uk-h4 uk-text-bold">{{ .heading }}</h2>
-                    <p>{{ .body }}</p>
-                </div>
+{{ if .Params.disable_services }}
+<div class="uk-section uk-section-large" style="background: rgb(243, 243, 243)">
+    <div class="uk-container uk-container-large">
+        <div class="uk-margin-large-bottom uk-text-center">
+            <h2 class="uk-text-bold">Services</h2>
+        </div>
+        <div class="uk-child-width-expand@l uk-child-width-1-3@s uk-text-center" uk-grid>
+            {{ range .Params.featured.featured_panels }}
+            <div>
+                {{ if .svg }}
+                {{ .svg | safeHTML }}
                 {{ end }}
+                <h2 class="uk-h4 uk-text-bold">{{ .heading }}</h2>
+                <p>{{ .body }}</p>
             </div>
+            {{ end }}
         </div>
     </div>
+</div>
+{{ end }}
     {{ if .Params.extra.heading }}
     <div class="uk-section uk-section-large"{{ if .Params.extra_two.heading }}style="padding-bottom:0;"{{ end }}>
-        <div class="uk-container">
+        <div class="uk-container uk-container-small">
             <div class="uk-child-width-expand@s uk-flex-middle" uk-grid>
                 <div>
-                    <div class="uk-margin-large-bottom uk-text-center">
+                    <div class="uk-margin-medium-bottom uk-text-center">
                         <h2 class="uk-text-bold">{{ .Params.extra.heading }}</h2>
                     </div>
                     <div>
@@ -77,13 +81,13 @@
     {{ end }}
     {{ if .Params.extra_two.heading }}
     <div class="uk-section uk-section-large">
-        <div class="uk-container">
+        <div class="uk-container uk-container-small">
             <div class="uk-child-width-expand@s uk-flex-middle" uk-grid>
                 <div>
                     <img src="{{ .Params.extra_two.image }}" alt="">
                 </div>
                 <div>
-                    <div class="uk-margin-large-bottom uk-text-center">
+                    <div class="uk-margin-medium-bottom uk-text-center">
                         <h2 class="uk-text-bold">{{ .Params.extra_two.heading }}</h2>
                     </div>
                     <div>
@@ -96,7 +100,7 @@
     {{ end }}
 
     {{ if not .Params.hide_form }}
-    <div class="uk-section uk-section-large uk-light" style="background: #204079">
+    <div class="uk-section uk-section-large uk-light" style="background: #0d234a">
         <div class="hero-overlay"></div>
         <div class="uk-container uk-container-large">
             <div class="uk-flex uk-flex-center">

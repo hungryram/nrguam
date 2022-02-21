@@ -1,7 +1,8 @@
 +++
 hide_form = true
-title = "Rent"
-url = "pages/rent"
+title = "Lease"
+url = "pages/lease"
+disable_service = true
 [closing]
 body = ""
 button_label = "Get started"
@@ -32,7 +33,7 @@ heading = "Special Leases"
 image = ""
 svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-key\" width=\"44\" height=\"44\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"#2c3e50\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/>\n  <circle cx=\"8\" cy=\"15\" r=\"4\" />\n  <line x1=\"10.85\" y1=\"12.15\" x2=\"19\" y2=\"4\" />\n  <line x1=\"18\" y1=\"5\" x2=\"20\" y2=\"7\" />\n  <line x1=\"15\" y1=\"8\" x2=\"17\" y2=\"10\" />\n</svg>"
 [intro]
-body = "From advertising to military inspections, we’ve got you covered."
+body = ""
 button_label = ""
 button_link = ""
 heading = " Get real support as a landlord."

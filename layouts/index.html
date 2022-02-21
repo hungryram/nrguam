@@ -160,7 +160,7 @@
 
   {{ if eq "text-and-image" .template }}
   {{ $buttonColor := $.Site.Data.appearance.colors }}
-  <div class="uk-section uk-section-large uk-dark" style="background:rgb(226, 226, 226)">
+  <div class="uk-section uk-section-large uk-dark" style="background:#f3f3f3">
     <div class="uk-container uk-container-large">
       <div class="uk-text-{{ if not .image }}center{{ else }}left{{ end }} uk-flex-middle" uk-grid>
         {{ if .image }}
