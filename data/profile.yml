@@ -1,5 +1,5 @@
 ---
-company_name: National Realty of Guam
+company_name: National Realty Guam
 social_media:
   instagram: https://www.instagram.com/homesinguam/
   twitter: ''
@@ -30,3 +30,4 @@ search_engine_optimization:
   facebook:
     app_id: ''
   no_index: false
+  url: ''
