@@ -3,20 +3,20 @@ enableRobotsTXT = "true"
 languageCode = "en-us"
 summaryLength = 25
 [[menu.footer]]
-name = "Lease"
-url = "/pages/lease"
+name = "Featured"
+url = "https://search.idxhome.com/featured/162504"
 weight = 5
-[[menu.footer]]
-name = "Buy"
-url = "/pages/buy"
-weight = 2
 [[menu.footer]]
 name = "Sell"
 url = "/pages/sell"
 weight = 3
 [[menu.footer]]
-name = "Featured"
-url = "https://search.idxhome.com/featured/162504"
+name = "Buy"
+url = "/pages/buy"
+weight = 2
+[[menu.footer]]
+name = "Lease"
+url = "/pages/lease"
 weight = 4
 [[menu.footer]]
 name = "Home"
